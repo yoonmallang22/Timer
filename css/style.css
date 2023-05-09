@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+}
+
+input,
+button {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+body {
+  background: linear-gradient(90deg, #f0f4ff 0%, #a5b6ee 100%);
+  font-family: "Pretendard-bold";
+}
+
+h1 {
+  width: 244px;
+  margin: 72px auto 0;
+}
+
+section {
+  width: 400px;
+  height: 360px;
+  background: linear-gradient(144.07deg, #5572bb 0%, #374b7c 100%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+  padding: 48px 44px 40px;
+  margin: 60px auto;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 23px;
+  background-color: #3d538a;
+}
+
+form::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 32px;
+  background-color: #5b75b4;
+}
+
+label {
+  font-family: "Pretendard-bold";
+  font-size: 12px;
+  text-align: center;
+  color: #a5b6ee;
+}
+
+input {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%);
+  border: 1px solid #354971;
+  border-radius: 4px;
+  font-family: "Pretendard-bold";
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  width: 112px;
+  height: 48px;
+  margin-top: 40px;
+  background-color: #324577;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  font-size: 14px;
+  color: #617199;
+}
+
+button.reset {
+  margin-left: 12px;
+}
+
+button.on.start::before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 17px;
+  background: url(../img/icon-start.png);
+}
+
+button.on {
+  color: #fff;
+}
+button.on.start {
+  background-color: #5180ff;
+}
+button.on.pause {
+  background-color: #15c2b8;
+}
+button.on.reset {
+  background-color: #fb7099;
+}
+
+small {
+  display: block;
+  text-align: center;
+  color: #8596bf;
+}
